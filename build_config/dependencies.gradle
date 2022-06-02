@@ -1,0 +1,97 @@
+ext {
+    buildToolsV = "30.0.3"
+    minSdkV = 28
+    targetSdkV = 31
+    compileSdkV = 31
+    versionCodeNum = 1
+
+    appСompat = '1.4.1'
+    core = '1.7.0'
+    constraintLayout = '2.1.3'
+    fragment = '1.2.0-rc04'
+    material = '1.4.0'
+    navComp = '2.3.5'
+    legacy = '1.0.0'
+    materialComponents = '1.4.0'
+    firebaseMessagingVersion = '23.0.3'
+
+    rxAndroid = '2.1.1'
+    retrofit = '2.7.1'
+    loggingInterceptor = '4.3.0'
+    coroutine = '1.5.0'
+    daggerVersion = '2.38.1'
+    lifecycle = '2.4.0'
+
+    junitext = '1.1.3'
+    Junit = '4.+'
+    junitext = '1.1.3'
+    mockitoVersion = '4.2.0'
+    mockitoKotlin = '2.2.0'
+    coroutinesTest = '1.3.4'
+    coreTestVersion = '2.0.0'
+    mockitoInlineVersion = '2.13.0'
+    mockitoKotlin2 = '2.2.11'
+
+    kapt = [
+            daggerCompiler   : "com.google.dagger:dagger-compiler:2.16",
+            daggerProcessor  : "com.google.dagger:dagger-android-processor:2.16"
+    ]
+
+    androidX = [
+            coreKtx          : "androidx.core:core-ktx:$core",
+            constraintLayout : "androidx.constraintlayout:constraintlayout:$constraintLayout",
+            fragment         : "androidx.fragment:fragment:$fragment",
+            legacy           : "androidx.legacy:legacy-support-v4:$legacy",
+            jUnitKtx         : "androidx.test.ext:junit-ktx:1.1.3"
+    ]
+
+    google = [
+            design             : "com.google.android.material:material:$material"
+
+    ]
+
+    network = [
+            core              : "com.squareup.retrofit2:retrofit:$retrofit",
+            converterGson     : "com.squareup.retrofit2:converter-gson:$retrofit",
+            rxAdapter         : "com.squareup.retrofit2:adapter-rxjava2:$retrofit",
+            loggingInterceptor: "com.squareup.okhttp3:logging-interceptor:$loggingInterceptor",
+            okhttp            : "com.squareup.okhttp3:okhttp:$loggingInterceptor",
+    ]
+
+    coroutines = [
+            coroutinesAndroid : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine",
+            coroutinesCore    : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine",
+            lifecycleLiveData : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle"
+    ]
+
+    dagger = [
+            dagger            : "com.google.dagger:dagger-android:2.16"
+    ]
+
+    navComp = [
+            navCompFragment   : "androidx.navigation:navigation-fragment-ktx:$navComp",
+            navCompUI         : "androidx.navigation:navigation-ui-ktx:$navComp"
+    ]
+
+    unitTests = [
+            junit             : "junit:junit:$Junit",
+            mockito           : "org.mockito:mockito-core:$mockitoVersion",
+            mockitoKotlin     : "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitoKotlin",
+            coroutinesTests   : "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutinesTest",
+            coreTests         : "androidx.arch.core:core-testing:$coreTestVersion",
+            mockitoInline     : "org.mockito:mockito-inline:$mockitoInlineVersion",
+            mockitoKotlin2    : "org.mockito.kotlin:mockito-kotlin:$mockitoKotlin2",
+            coroutinesTest    : "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.1"
+    ]
+
+    androidTests = [
+            espressoCore      : "androidx.test.espresso:espresso-core:3.4.0",
+            testRunner        : "androidx.test:runner:1.4.0",
+            testRule          : "androidx.test:rules:1.4.0",
+            espressoIntents   : "androidx.test.espresso:espresso-intents:3.4.0"
+    ]
+
+    firebase = [
+            firebaseMessaging : "com.google.firebase:firebase-messaging-ktx:$firebaseMessagingVersion"
+    ]
+}
