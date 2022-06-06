@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/savedInspectionFragment">
+    <fragment
+        android:id="@+id/savedInspectionFragment"
+        android:name="com.release.inspectionapp.inspection.ui.InspectionsFragment"
+        android:label="fragment_saved_inspection"
+        tools:layout="@layout/fragment_inspections">
+        <action
+            android:id="@+id/action_savedInspectionFragment_to_inspectionQuizFragment"
+            app:destination="@id/inspectionQuizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inspectionQuizFragment"
+        android:name="com.release.inspectionapp.questions.ui.QuestionsFragment"
+        android:label="fragment_inspection_quiz"
+        tools:layout="@layout/fragment_questions">
+        <action
+            android:id="@+id/action_inspectionQuizFragment_to_savedInspectionFragment"
+            app:destination="@id/savedInspectionFragment" />
+    </fragment>
+</navigation>

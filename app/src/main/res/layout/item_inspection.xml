@@ -1,0 +1,109 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="androidx.core.content.ContextCompat" />
+
+        <variable
+            name="inspectionItemModel"
+            type="com.release.domain.model.InspectionItem" />
+
+        <variable
+            name="clickListener"
+            type="com.release.inspectionapp.inspection.ui.adaper.InspectionItemClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_2.50"
+        android:layout_marginTop="@dimen/space_2.50"
+        android:layout_marginEnd="@dimen/space_2.50"
+        android:background="@drawable/item_background">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_2"
+            android:text="@string/type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_big"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_type_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space_2"
+            android:textSize="@dimen/text_size_small"
+            android:text="@{inspectionItemModel.type}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_type"
+            app:layout_constraintTop_toTopOf="@id/tv_type" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_2"
+            android:textSize="@dimen/text_size_big"
+            android:text="@string/area"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_type_value" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_area_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space_2"
+            android:textSize="@dimen/text_size_small"
+            android:text="@{inspectionItemModel.area}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_area"
+            app:layout_constraintTop_toTopOf="@id/tv_area" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_access"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_2"
+            android:textSize="@dimen/text_size_big"
+            android:text="@string/access"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_area_value" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_access_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space_2"
+            android:textSize="@dimen/text_size_small"
+            android:text="@{inspectionItemModel.access}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_access"
+            app:layout_constraintTop_toTopOf="@id/tv_access" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_2"
+            android:onClickListener="@{() -> clickListener.onResumeInspectionClicked(inspectionItemModel.id)}"
+            android:text="@string/resume"
+            android:textColor="@color/purple_200"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_access_value" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,14 @@
+<resources>
+    <style name="InspectionApp.Button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_marginEnd">@dimen/space_9.75</item>
+        <item name="android:layout_marginStart">@dimen/space_9.75</item>
+        <item name="cornerRadius">@dimen/space_8.75</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="strokeColor">@color/blue</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+    </style>
+
+    <style name="InspectionApp.InputLayoutOutLinedBoxColor" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="colorPrimary">@color/blue</item>
+    </style>
+</resources>
