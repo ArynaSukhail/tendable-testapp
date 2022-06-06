@@ -2,96 +2,89 @@ ext {
     buildToolsV = "30.0.3"
     minSdkV = 28
     targetSdkV = 31
-    compileSdkV = 31
+    compileSdkV= 31
     versionCodeNum = 1
 
-    appСompat = '1.4.1'
-    core = '1.7.0'
-    constraintLayout = '2.1.3'
-    fragment = '1.2.0-rc04'
-    material = '1.4.0'
-    navComp = '2.3.5'
-    legacy = '1.0.0'
-    materialComponents = '1.4.0'
-    firebaseMessagingVersion = '23.0.3'
+    appСompatVersion = '1.4.1'
+    coreVersion = '1.8.0'
+    navCompVersion = '2.3.5'
+    constraintLayoutVersion = '2.1.4'
+    fragmentVersion = '1.2.0-rc04'
+    legacyVersion = '1.0.0'
+    materialVersion = '1.6.1'
+    materialComponentsVersion = '1.6.1'
 
-    rxAndroid = '2.1.1'
-    retrofit = '2.7.1'
-    loggingInterceptor = '4.3.0'
-    coroutine = '1.5.0'
-    daggerVersion = '2.38.1'
-    lifecycle = '2.4.0'
+    rxAndroidVersion = '2.1.1'
+    retrofitVersion = '2.7.1'
+    coroutineVersion = '1.5.0'
+    loggingInterceptorVersion = '4.3.0'
+    coroutinesTestVersion = '1.3.4'
 
-    junitext = '1.1.3'
-    Junit = '4.+'
-    junitext = '1.1.3'
+    daggerVersion = '2.16'
+    lifecycleVersion = '2.4.0'
+
+    junitextVersion = '1.1.3'
+    JunitVersion = '4.+'
+    junitextVersion = '1.1.3'
     mockitoVersion = '4.2.0'
-    mockitoKotlin = '2.2.0'
-    coroutinesTest = '1.3.4'
-    coreTestVersion = '2.0.0'
+    mockitoKotlinVersion = '2.2.0'
     mockitoInlineVersion = '2.13.0'
-    mockitoKotlin2 = '2.2.11'
+    mockitoKotlin2Version = '2.2.11'
+    coreTestVersion = '2.0.0'
+    testRunnerVersion = '1.4.0'
 
     kapt = [
-            daggerCompiler   : "com.google.dagger:dagger-compiler:2.16",
-            daggerProcessor  : "com.google.dagger:dagger-android-processor:2.16"
-    ]
-
-    androidX = [
-            coreKtx          : "androidx.core:core-ktx:$core",
-            constraintLayout : "androidx.constraintlayout:constraintlayout:$constraintLayout",
-            fragment         : "androidx.fragment:fragment:$fragment",
-            legacy           : "androidx.legacy:legacy-support-v4:$legacy",
-            jUnitKtx         : "androidx.test.ext:junit-ktx:1.1.3"
-    ]
-
-    google = [
-            design             : "com.google.android.material:material:$material"
-
-    ]
-
-    network = [
-            core              : "com.squareup.retrofit2:retrofit:$retrofit",
-            converterGson     : "com.squareup.retrofit2:converter-gson:$retrofit",
-            rxAdapter         : "com.squareup.retrofit2:adapter-rxjava2:$retrofit",
-            loggingInterceptor: "com.squareup.okhttp3:logging-interceptor:$loggingInterceptor",
-            okhttp            : "com.squareup.okhttp3:okhttp:$loggingInterceptor",
-    ]
-
-    coroutines = [
-            coroutinesAndroid : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine",
-            coroutinesCore    : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine",
-            lifecycleLiveData : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle"
+            daggerCompiler   : "com.google.dagger:dagger-compiler:$daggerVersion",
+            daggerProcessor  : "com.google.dagger:dagger-android-processor:$daggerVersion"
     ]
 
     dagger = [
-            dagger            : "com.google.dagger:dagger-android:2.16"
+            dagger            : "com.google.dagger:dagger-android:$daggerVersion"
     ]
 
     navComp = [
-            navCompFragment   : "androidx.navigation:navigation-fragment-ktx:$navComp",
-            navCompUI         : "androidx.navigation:navigation-ui-ktx:$navComp"
+            navCompFragment   : "androidx.navigation:navigation-fragment-ktx:$navCompVersion",
+            navCompUI         : "androidx.navigation:navigation-ui-ktx:$navCompVersion"
+    ]
+
+    androidX = [
+            coreKtx          : "androidx.core:core-ktx:$coreVersion",
+            constraintLayout : "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion",
+            fragment         : "androidx.fragment:fragment:$fragmentVersion",
+            legacy           : "androidx.legacy:legacy-support-v4:$legacyVersion",
+            jUnitKtx         : "androidx.test.ext:junit-ktx:$junitextVersion"
+    ]
+
+    google = [
+            design           : "com.google.android.material:material:$materialVersion"
+    ]
+
+    network = [
+            core              : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            converterGson     : "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            rxAdapter         : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+            loggingInterceptor: "com.squareup.okhttp3:logging-interceptor:$loggingInterceptorVersion",
+            okhttp            : "com.squareup.okhttp3:okhttp:$loggingInterceptorVersion",
+    ]
+
+    coroutines = [
+            coroutinesAndroid : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutineVersion",
+            coroutinesCore    : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutineVersion",
+            lifecycleLiveData : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
     ]
 
     unitTests = [
-            junit             : "junit:junit:$Junit",
+            junit             : "junit:junit:$JunitVersion",
             mockito           : "org.mockito:mockito-core:$mockitoVersion",
-            mockitoKotlin     : "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitoKotlin",
-            coroutinesTests   : "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutinesTest",
+            mockitoKotlin     : "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitoKotlinVersion",
+            coroutinesTests   : "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutinesTestVersion",
             coreTests         : "androidx.arch.core:core-testing:$coreTestVersion",
             mockitoInline     : "org.mockito:mockito-inline:$mockitoInlineVersion",
-            mockitoKotlin2    : "org.mockito.kotlin:mockito-kotlin:$mockitoKotlin2",
-            coroutinesTest    : "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.1"
+            mockitoKotlin2    : "org.mockito.kotlin:mockito-kotlin:$mockitoKotlin2Version"
     ]
 
     androidTests = [
-            espressoCore      : "androidx.test.espresso:espresso-core:3.4.0",
-            testRunner        : "androidx.test:runner:1.4.0",
-            testRule          : "androidx.test:rules:1.4.0",
-            espressoIntents   : "androidx.test.espresso:espresso-intents:3.4.0"
-    ]
-
-    firebase = [
-            firebaseMessaging : "com.google.firebase:firebase-messaging-ktx:$firebaseMessagingVersion"
+            testRunner        : "androidx.test:runner:$testRunnerVersion",
+            testRule          : "androidx.test:rules:$testRunnerVersion"
     ]
 }
