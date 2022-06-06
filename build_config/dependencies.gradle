@@ -80,10 +80,7 @@ ext {
             coroutinesTests   : "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutinesTestVersion",
             coreTests         : "androidx.arch.core:core-testing:$coreTestVersion",
             mockitoInline     : "org.mockito:mockito-inline:$mockitoInlineVersion",
-            mockitoKotlin2    : "org.mockito.kotlin:mockito-kotlin:$mockitoKotlin2Version"
-    ]
-
-    androidTests = [
+            mockitoKotlin2    : "org.mockito.kotlin:mockito-kotlin:$mockitoKotlin2Version",
             testRunner        : "androidx.test:runner:$testRunnerVersion",
             testRule          : "androidx.test:rules:$testRunnerVersion"
     ]
