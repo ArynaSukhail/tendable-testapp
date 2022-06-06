@@ -40,15 +40,7 @@ dependencies {
 
     implementation androidX.values()
 
-    implementation google.values()
-
     implementation network.values()
 
-    implementation navComp.values()
-
     implementation dagger.values()
-
-    testImplementation unitTests.values()
-
-    androidTestImplementation androidTests.values()
 }
