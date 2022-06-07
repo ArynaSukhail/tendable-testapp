@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">InspectionApp</string>
+    <string name="signin">SignIn</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signout">SIGNOUT</string>
+    <string name="back">Back</string>
+    <string name="resume">RESUME</string>
+    <string name="no_inspection_exists">Oops, it seems like no inspection exists, start a new inspection by pressing the button below :)</string>
+    <string name="cant_show_questions">Can\'t show questions, something went wrong</string>
+    <string name="successfully_sent">successfully sent</string>
+    <string name="start">Start</string>
+    <string name="send">Send</string>
+    <string name="type">Type:</string>
+    <string name="area">Area:</string>
+    <string name="access">Access:</string>
+    <string name="we_make_inspection_easy">We make inspection easy</string>
+    <string name="signup">SIGNUP</string>
+    <string name="signup_new_user">Signup new User</string>
+    <string name="join_us_to_make_inspections">Join us to make inspections</string>
+    <string name="fillout_all_fields">Please, fill out all fields</string>
 </resources>

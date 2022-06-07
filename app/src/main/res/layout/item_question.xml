@@ -1,0 +1,46 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="androidx.core.content.ContextCompat" />
+
+        <variable
+            name="questionItemModel"
+            type="com.release.domain.model.QuestionItem" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/space_2.50"
+    android:layout_marginEnd="@dimen/space_2.50"
+    android:layout_marginTop="@dimen/space_2.50"
+    android:background="@drawable/item_background">
+
+    <com.release.inspectionapp.questions.ui.adapter.AnswersGroup
+        android:id="@+id/answersGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_2"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_question" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_question"
+        android:layout_width="0dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_big"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@{questionItemModel.name}"
+        tools:text="Question Title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
