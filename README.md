@@ -15,4 +15,4 @@
 - User can see inspections, select questions and leave the screen, selected questions will be immidiatly saved and user can continue the quiz later.
 - User can send finished(or not finished) inspections.
 
-<img src="https://giant.gfycat.com/inspectionApp_video.webm">
+<img src="https://github.com/arishagraf/tendable-testapp/inspectionApp_video.webm.mov">
