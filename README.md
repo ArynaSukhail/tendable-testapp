@@ -8,6 +8,7 @@
 - Rest API, local server
 - Git
 - Unit testing with Mockito for data, domain and app layers.
+- OS Linux
  
 # What this App can
 
