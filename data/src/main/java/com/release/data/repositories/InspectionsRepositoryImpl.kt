@@ -17,7 +17,7 @@ class InspectionsRepositoryImpl @Inject constructor(
     private val inspectionsRealm: InspectionsRealm,
     private val apiService: ApiService,
     private val networkCall: NetworkCall,
-    private val inspectionMapper: DataEntitiesMapper<StartResponse, InspectionItem>,
+    private val inspectionMapper: DataEntitiesMapper<StartResponse, InspectionItem>
 ) : InspectionsRepository {
 
     override suspend fun startInspection(): List<InspectionItem> {
