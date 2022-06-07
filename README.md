@@ -15,4 +15,4 @@
 - User can see inspections, select questions and leave the screen, selected questions will be immidiatly saved and user can continue the quiz later.
 - User can send finished(or not finished) inspections.
 
-inspectionApp_video.mov
+![](inspectionApp_video.mov)
