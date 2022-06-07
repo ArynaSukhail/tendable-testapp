@@ -3,10 +3,11 @@
 # 🛠 Technologies used
 
 - Kotlin
-- Dagger2, Realm, DataBinding
+- Dagger2, Realm, DataBinding, Custom View
 - Clean Architecture, MVI, LiveData, Coroutines
 - Rest API, local server
 - Git
+- Unit testing with Mockito for data, domain and app layers.
  
 # What this App can
 
