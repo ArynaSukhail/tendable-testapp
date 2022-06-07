@@ -16,6 +16,5 @@
 - User can see inspections, select questions and leave the screen, selected questions will be immidiatly saved and user can continue the quiz later.
 - User can send finished(or not finished) inspections.
 
-<video width="320" height="240" controls>
-  <source src="https://github.com/arishagraf/tendable-testapp/inspectionApp_video.mov" type="video/mp4">
-</video>
+https://user-images.githubusercontent.com/55514438/172365441-741bfb26-8610-43bd-afd0-3b21f530a455.mov
+
