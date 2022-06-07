@@ -15,4 +15,6 @@
 - User can see inspections, select questions and leave the screen, selected questions will be immidiatly saved and user can continue the quiz later.
 - User can send finished(or not finished) inspections.
 
-![](inspectionApp_video.mov)
+<video width="320" height="240" controls>
+  <source src="inspectionApp_video.mov" type="video/mp4">
+</video>
