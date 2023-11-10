@@ -1,20 +1,26 @@
-# Tendable InspectionApp
+# Ayolo TestApp
+`  
+![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)`
 
 # 🛠 Technologies used
 
-- Kotlin
-- Dagger2, Realm, DataBinding, Custom View
-- Clean Architecture, MVI, LiveData, Coroutines
-- Rest API, local server
-- Git
-- Unit testing with Mockito for data, domain and app layers.
-- OS Linux
+ - Compose  
+ - Material3   
+ - Compose Destinations  
+ -  Lottie   
+ - Accompanist  
+  - Hilt   
+   - Ksp   
+   - Room   
+   - Coroutines  
+    - JUnit   
+   -  Mockito  
+     - Turbine
+
  
-# What this App can
-
-- User can login, register and signout.
-- User can see inspections, select questions and leave the screen, selected questions will be immidiatly saved and user can continue the quiz later.
-- User can send finished(or not finished) inspections.
-
-https://user-images.githubusercontent.com/55514438/172365441-741bfb26-8610-43bd-afd0-3b21f530a455.mov
+# What's inside the app
+1. Splash screen  
+2. Homepage with chats sorted by last message. If there are no chats, a page with a suggestion to create a chat and a lotty animation is displayed  
+3. Chat creation page with a text field and validation and a check in the database for the presence of such a chat  
+4. Message page - chat name, the ability to write to ourselves, text field validation
 
